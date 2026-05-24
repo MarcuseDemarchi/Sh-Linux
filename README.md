@@ -4,16 +4,26 @@ Este repositório contém uma coleção de scripts Shell Bash desenvolvidos para
 
 ## Como Executar com Docker
 
-Para facilitar o teste e execução dos scripts sem sujar seu sistema operacional, este projeto inclui uma configuração Docker.
+Existem duas formas de executar este projeto usando Docker: baixando a imagem pronta do DockerHub ou construindo-a localmente.
 
-### 1. Construir a Imagem
+### 1. Usando imagem do DockerHub (Recomendado)
+
+Para baixar e rodar a imagem diretamente do DockerHub:
+```bash
+docker run -it marcusedemarchi/lab-shell-atividades:v1
+```
+
+### 2. Construindo Localmente
+
+Caso queira modificar o código e testar localmente:
+
+#### Construir a Imagem
 No diretório raiz do projeto, execute:
 ```bash
 docker build -t sh-linux-app .
 ```
 
-### 2. Rodar o Container
-Para entrar no ambiente interativo e testar os scripts:
+#### Rodar o Container
 ```bash
 docker run -it sh-linux-app
 ```
